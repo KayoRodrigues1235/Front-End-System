@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kayo Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Kayo Sistemas</h1>
+            <a href="index.html" class="back-link">← Voltar</a>
+        </header>
+
+        <main class="main-content">
+            <div class="login-container">
+                <div class="login-box">
+                    <h2>Login</h2>
+                    <p>Digite suas credenciais para acessar o sistema</p>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                required
+                                placeholder="seu.email@universidade.edu.br"
+                            >
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Senha:</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password"
+                                required
+                                minlength="6"
+                                placeholder="Digite sua senha"
+                            >
+                            <div class="error-message" id="password-error"></div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox">
+                                <input type="checkbox" id="remember">
+                                <span>Lembrar de mim</span>
+                            </label>
+                            <a href="#" class="forgot-password">Esqueci a senha</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-login">Entrar</button>
+
+                        <div class="register-link">
+                            <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="login-info">
+                    <h3>Importante</h3>
+                    <ul>
+                        <li>Use seu e-mail institucional</li>
+                        <li>A senha deve ter no mínimo 6 caracteres</li>
+                        <li>Mantenha suas credenciais em segurança</li>
+                        <li>Em caso de problemas, contate o suporte</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Sistema desenvolvido para fins acadêmicos</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
